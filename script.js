@@ -1,27 +1,27 @@
-// // Spread Operator
-// var arr = [10,20,30];
-// var arr1 = [...arr, 40, 50 ,60];
-// console.log(arr);
-// console.log(arr1);
+// Spread Operator
+var arr = [10,20,30];
+var arr1 = [...arr, 40, 50 ,60];
+console.log(arr);
+console.log(arr1);
 
-// // Destructuring Operator
-// var marks = [100,89,98,96,97];
-// var [m1,m2,m3,m4,m5] = marks;
-// console.log(m1,m2,m3,m4,m5);
+// Destructuring Operator
+var marks = [100,89,98,96,97];
+var [m1,m2,m3,m4,m5] = marks;
+console.log(m1,m2,m3,m4,m5);
 
-// //call back function
-// function demo(){
-//     console.log("Hello from demo");
-// }
+//call back function
+function demo(){
+    console.log("Hello from demo");
+}
 
-// const callback = (callbackfun)  =>{
-//     console.log("Hello from Call back");
-//     callbackfun();
-// }
-// callback(demo)
-// //template literals
-// var name ="viky"
-// console.log(`My name is ${name}`) 
+const callback = (callbackfun)  =>{
+    console.log("Hello from Call back");
+    callbackfun();
+}
+callback(demo)
+//template literals
+var name ="viky"
+console.log(`My name is ${name}`) 
 
 //MAP-accept a function return new array
 function addOne(n){

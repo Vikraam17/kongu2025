@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+.element{
+    list-style: none;
+    font-size: xx-large;
+}
+
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.link:hover{
+    color:blue
+}

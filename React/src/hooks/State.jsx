@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
 const State = () => {
@@ -9,6 +9,10 @@ const State = () => {
     const handleDecrement = () =>{
         setCount(count-1);
     }
+    useEffect(()=>{
+      console.log("count changed");     
+    },[count])
+    
   return (
     <div>
         <h1>UseState Example</h1>

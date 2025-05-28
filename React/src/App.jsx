@@ -6,9 +6,21 @@ import Home from "./pages/Home";
 import Service from "./pages/Service";
 import State from "./hooks/State";
 import Form from "./hooks/Form";
+import { createContext, useEffect } from "react";
+import Effect from "./hooks/Effect";
+import Ref from "./hooks/Ref";
+import Reducer from "./hooks/Reducer";
 
 function App(){
   let name ='vijay'
+ 
+
+  // useEffect(()=>{
+  //   console.log("Component mounted")
+  //   return(()=>{
+  //     console.log("component unmounted");     
+  //   })
+  // },[])
   return(
     <>
         <Navbar/>
@@ -19,11 +31,10 @@ function App(){
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/state" element={<State/>}/>
           <Route path="/form" element={<Form/>}/>
+          <Route path="/effect" element={<Effect/>}/>
+          <Route path="/ref" element={<Ref/>}/>
+          <Route path="/reducer" element={<Reducer/>}/>
         </Routes>
-        {/* <Home/>
-        <About/>
-        <Service/>
-        <ContactUs/> */}
     </>
   )
 }

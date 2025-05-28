@@ -17,3 +17,9 @@
 .link:hover{
     color:blue
 }
+
+.align{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}

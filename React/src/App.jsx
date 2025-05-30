@@ -10,6 +10,7 @@ import { createContext, useEffect } from "react";
 import Effect from "./hooks/Effect";
 import Ref from "./hooks/Ref";
 import Reducer from "./hooks/Reducer";
+import Todos from "./pages/Todos";
 
 function App(){
   let name ='vijay'
@@ -26,6 +27,7 @@ function App(){
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home name={name}/>}/>
+          <Route path="/todos" element={<Todos/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/service" element={<Service/>}/>
           <Route path="/contact" element={<ContactUs/>}/>

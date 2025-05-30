@@ -9,12 +9,12 @@ exports.getByIdRoute=async(req,res)=>{
     res.json(Task)
 }
 exports.postRoute =async(req,res)=>{
-    const {name,message}=req.body
-    const exist =await Todo.findOne({name});
+    const {task,completed}=req.body
+    const exist =await Todo.findOne({task});
     if(exist) return res.status(404).json({
         message:"Task Already exist",
 }) 
-    const newTask = new Todo({name,message})
+    const newTask = new Todo({task,completed})
     await newTask.save();
     res.status(201).json({
         message:"Task Added sucessfully",

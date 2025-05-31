@@ -12,6 +12,8 @@ const Home = ({name}) => {
         <Link to='/ref'>useRef Example</Link>
         <Link to='/reducer'>useReducer Example</Link>
         <Link to='/todos'>Todo task</Link>
+        <Link to='login'>Login</Link>
+        <Link to='/signup'>Sign Up</Link>
         </div>
     </div>
   )

@@ -11,6 +11,8 @@ import Effect from "./hooks/Effect";
 import Ref from "./hooks/Ref";
 import Reducer from "./hooks/Reducer";
 import Todos from "./pages/Todos";
+import Login from "./Auth/Login";
+import Signup from "./Auth/Signup";
 
 function App(){
   let name ='vijay'
@@ -36,6 +38,8 @@ function App(){
           <Route path="/effect" element={<Effect/>}/>
           <Route path="/ref" element={<Ref/>}/>
           <Route path="/reducer" element={<Reducer/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
         </Routes>
     </>
   )
